@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useNoteStore } from '../store/noteStore';
 import { NoteList } from '../components/NoteList';
-import { Plus, Search, Network, FileText, TrendingUp, Link2 } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 export function Home() {
-  const { notes, initialized, initialize, createNote, searchQuery, setSearchQuery, getFilteredNotes } = useNoteStore();
+  const { notes, initialized, initialize, createNote, searchQuery, getFilteredNotes } = useNoteStore();
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [newTitle, setNewTitle] = useState('');
   const navigate = useNavigate();

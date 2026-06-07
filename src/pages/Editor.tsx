@@ -9,10 +9,8 @@ import {
   ArrowLeft,
   Eye,
   Edit3,
-  Columns,
   Trash2,
   Network,
-  Save,
   FileText,
 } from 'lucide-react';
 

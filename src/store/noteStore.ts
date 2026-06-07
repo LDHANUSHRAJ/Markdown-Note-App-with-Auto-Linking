@@ -10,8 +10,7 @@ import {
   saveFolder, 
   deleteFolderFromDB,
   getAllWorkspaces,
-  saveWorkspace,
-  deleteWorkspaceFromDB
+  saveWorkspace
 } from '../db/indexeddb';
 import { NoteTrie } from '../algorithms/trie';
 import { NoteGraph } from '../algorithms/graph';

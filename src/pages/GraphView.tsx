@@ -1,11 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useNoteStore } from '../store/noteStore';
 import { GraphCanvas } from '../components/GraphCanvas';
-import { ArrowLeft, ZoomIn, ZoomOut, Maximize } from 'lucide-react';
 
 export function GraphView() {
-  const navigate = useNavigate();
   const { notes, initialized, initialize } = useNoteStore();
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });

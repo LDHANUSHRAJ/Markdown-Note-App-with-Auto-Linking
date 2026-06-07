@@ -4,7 +4,6 @@ import { useNoteStore } from '../store/noteStore';
 import { 
   Folder, 
   FolderPlus,
-  FileText, 
   Plus, 
   Search, 
   Network, 
@@ -16,7 +15,6 @@ import {
   LogOut,
   Database
 } from 'lucide-react';
-import type { Note } from '../types';
 
 interface SidebarLayoutProps {
   children: React.ReactNode;
